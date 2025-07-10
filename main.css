@@ -1,17 +1,104 @@
- html {
-        font-size: 22px;
-      }
-      body {
-        background-color: #333;
-        color: whitesmoke;
-      }
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      a{
-        color: aliceblue;
-      }
-      a:visited{
-        color: aqua
-      }
-      a:hover{
-        color: #eee; ;
-      }
+/* Section-specific styling */
+#intro {
+  background-image: url('pinkbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#about {
+  background-color: bisque;
+}
+
+#contact {
+  background-color: blanchedalmond;
+}
+
+/* Header styling */
+header {
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+/* Navigation menu */
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: darkred;
+}
+
+/* Section layout */
+section {
+  height: 100vh;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px; /* To avoid header overlap */
+  text-align: center;
+}
+
+/* Container styling */
+.Container img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.Container h2 {
+  font-size: 3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.Container p, .Container ul {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  max-width: 800px;
+}
+
+/* Footer styling */
+footer {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ccc;
+}
